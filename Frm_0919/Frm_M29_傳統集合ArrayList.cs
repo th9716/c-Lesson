@@ -19,10 +19,10 @@ namespace Frm_0919
         }
 
 
-        ArrayList lsPro = new ArrayList();
+        ArrayList lsPro = new ArrayList(); //創建ArrayList
 
         
-        void ShowList()
+        void ShowList() //顯示產品
         {
             decimal totalPrice = 0m;
 

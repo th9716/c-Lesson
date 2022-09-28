@@ -25,12 +25,12 @@ namespace Frm_0919
 
             //for (int i = 0; i < lsPro.Count; i++)
             //{
-            //    lab_Show.Text += $" 名稱: {lsPro[i].Name} , 單價: {lsPro[i].Price} \n"; //泛用集合不用轉型
+            //    lab_Show.Text += $" 名稱: {lsPro[i].Name} , 單價: {lsPro[i].Price} \n";   //泛用集合不用轉型
             //    totalPrice += lsPro[i].Price;
             //}
             //lab_Show.Text += $"============== \n" + $"數量: {lsPro.Count} \n 總單價: {totalPrice}  ";
 
-            foreach(Product pro in lsPro)
+            foreach(Product pro in lsPro) //(類別 變數 in 範圍)
             {
                 lab_Show.Text += $" 名稱: {pro.Name} , 單價: {pro.Price} \n"; 
                 totalPrice += pro.Price;

@@ -106,6 +106,12 @@
     <Compile Include="Frm_M30_泛用集合_List.Designer.cs">
       <DependentUpon>Frm_M30_泛用集合_List.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_M32_String.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M32_String.Designer.cs">
+      <DependentUpon>Frm_M32_String.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility.cs" />
     <Compile Include="Frm_Member.cs">
       <SubType>Form</SubType>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_M30_泛用集合_List.resx">
       <DependentUpon>Frm_M30_泛用集合_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M32_String.resx">
+      <DependentUpon>Frm_M32_String.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Member.resx">
       <DependentUpon>Frm_Member.cs</DependentUpon>

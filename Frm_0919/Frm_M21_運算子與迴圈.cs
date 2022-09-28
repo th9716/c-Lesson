@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -126,22 +127,43 @@ namespace Frm_0919
 
             for(int y = 10,x = 5; Test(y,x) ; i++, x++ , y-= 2) // Test(y,x)呼叫下方回傳值 i遞增1x遞增1y遞減2
             {
+                
                 result += i + "," + y + "," + x +"\n";
+                if (y % 2 == 0)
+                {
+                    break; //若為true則直接停止迴圈
+                }
+
             }
+
             MessageBox.Show(result);
 
             bool Test(int y,int x) //因為迴圈的判斷式需要true或False的值所以使用boolean
             {
                 return y - x >= 1;
             }
-
-
         }
+
+
 
         private void button7_Click(object sender, EventArgs e)
         {
             foreach(Control item in Controls) //Conrol類別可以控制所有控制項;foreach回直到所有元素取完才會結束
             {
+
+                //if(item.GetType() != typeof(Button)) //類別Button需要用typeof轉型成type
+                //{
+                //    continue; //若為true則直接重新執行迴圈False則執行下面的程式
+                //}
+
+
+                //第二種判斷方式
+                if (!(item is Button))  //用is可以直接判斷類別不用轉型
+                {
+                    continue; //若為true則直接重新執行迴圈False則執行下面的程式
+                }
+
+
                 item.BackColor = Color.Beige;
                 item.ForeColor = Color.Coral;
                 item.Left -= 10;
