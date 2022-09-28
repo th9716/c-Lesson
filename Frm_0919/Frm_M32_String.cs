@@ -53,6 +53,8 @@ namespace Frm_0919
 
         }
 
+
+
         private void timerTime_Tick(object sender, EventArgs e) //Timer設置時間
         {
             labTime2.Text = DateTime.Now.ToShortTimeString();
@@ -62,7 +64,7 @@ namespace Frm_0919
 
 
 
-
+        //-------------------------------------------------------M32 Regex p32-12
         private void button4_Click(object sender, EventArgs e)
         {
             labPassword.Text = isCorrectPassword(txt_Password.Text) ? "密碼格式正確" : "密碼格式錯誤";
@@ -147,9 +149,6 @@ namespace Frm_0919
             }
             flag2 = !flag2;
         }
-
-
-
         
     }
 }

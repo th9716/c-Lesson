@@ -16,7 +16,7 @@ namespace Frm_0919
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_M32_String()); //執行的主程式
+            Application.Run(new Frm_M34_ReadWrite()); //執行的主程式
         }
     }
 }

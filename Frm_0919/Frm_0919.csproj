@@ -112,6 +112,12 @@
     <Compile Include="Frm_M32_String.Designer.cs">
       <DependentUpon>Frm_M32_String.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_M34_ReadWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M34_ReadWrite.Designer.cs">
+      <DependentUpon>Frm_M34_ReadWrite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility.cs" />
     <Compile Include="Frm_Member.cs">
       <SubType>Form</SubType>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_M32_String.resx">
       <DependentUpon>Frm_M32_String.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M34_ReadWrite.resx">
+      <DependentUpon>Frm_M34_ReadWrite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Member.resx">
       <DependentUpon>Frm_Member.cs</DependentUpon>
